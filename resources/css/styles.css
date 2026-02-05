@@ -1,0 +1,27 @@
+/* NOTE: Remove all unnecessary css once code is deployed */
+.header {
+  text-align: center;
+}
+
+.slider {
+  width: 100%;
+  max-height: auto;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  overscroll-behavior-x: contain;
+  display: flex;
+  scrollbar-width: none;
+}
+
+.slider picture {
+  min-width: 100%;
+  scroll-snap-align: center;
+  overscroll-behavior-x: contain;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.slider img {
+  width: 100%;
+}
