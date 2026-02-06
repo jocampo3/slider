@@ -2,19 +2,19 @@
 include 'components/slider.php';
 $images = [
   [
-    'desktop' => 'http://localhost:8000/imgs/img-1.jpg',
+    'desktop' => '',
     'mobile' => ''
   ],
   [
-    'desktop' => 'http://localhost:8000/imgs/img-2.jpg',
+    'desktop' => '',
     'mobile' => ''
   ],
   [
-    'desktop' => 'http://localhost:8000/imgs/img-3.jpg',
+    'desktop' => '',
     'mobile' => ''
   ],
   [
-    'desktop' => 'http://localhost:8000/imgs/img-4.jpg',
+    'desktop' => '',
     'mobile' => ''
   ]
 ]

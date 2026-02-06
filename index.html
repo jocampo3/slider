@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Slider</title>
+  <link rel="stylesheet" href="resources/css/styles.css">
+</head>
+
+<body>
+  <h1 class="header">Test Slider</h1>
+  <div class="slider-container">
+    <div id="hero-slider" class="slider">
+      <picture>
+        <source srcset="" media="(max-width: 480px)" />
+        <img src="http://localhost:8000/imgs/img-1.jpg" />
+      </picture>
+      <picture>
+        <source srcset="" media="(max-width: 480px)" />
+        <img src="http://localhost:8000/imgs/img-2.jpg" />
+      </picture>
+      <picture>
+        <source srcset="" media="(max-width: 480px)" />
+        <img src="http://localhost:8000/imgs/img-3.jpg" />
+      </picture>
+      <picture>
+        <source srcset="" media="(max-width: 480px)" />
+        <img src="http://localhost:8000/imgs/img-4.jpg" />
+      </picture>
+    </div>
+    <div class="buttons">
+      <button class="btn btn-prev" onclick="goTo(getCurrentIndex() - 1)">&lt;</button>
+      <button class="btn btn-next" onclick="goTo(getCurrentIndex() + 1)">&gt;</button>
+    </div>
+  </div>
+</body>
+<script src="resources/js/index.js"></script>
+
+</html>
