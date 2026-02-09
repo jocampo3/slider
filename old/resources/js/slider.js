@@ -1,5 +1,5 @@
 class Slider {
-  constructor(container, interval = 3000) {
+  constructor(container, interval) {
     this.container = container;
     this.slider = container.querySelector('.slider');
     this.slides = this.slider.querySelectorAll('picture');
@@ -70,9 +70,11 @@ class Slider {
 
   addListeners() {
     this.slider.addEventListener('mousedown', this.startDragging);
-    this.slider.addEventListener('mousemove', this.move);
+    this.slider.addEventListener('mousemove', this.move); // stop timer when manually scrolling
     this.slider.addEventListener('mouseup', this.stopDragging);
     this.slider.addEventListener('mouseleave', this.stopDragging);
+
+		// add conditions for when buttons exist
 
     this.prevBtn.addEventListener('click', () =>
       this.goTo(this.index - 1)
@@ -86,7 +88,3 @@ class Slider {
     );
   }
 }
-
-document.querySelectorAll('.slider-container').forEach(
-	container => new Slider(container)
-);
